@@ -54,7 +54,7 @@
 
 /* Smooth scroll */
 :root {
-  scroll-behavior: smooth;
+  
 }
 
 /*--------------------------------------------------------------
@@ -195,6 +195,9 @@ h6 {
   padding: 15px;
   margin-bottom: 24px;
 }
+.animate-on-scroll {
+  animation: none; /* No animation */
+}
 
 .php-email-form .loading:before {
   content: "";
@@ -287,9 +290,10 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 126px;
-  margin-right: 8px;
-  margin-top: -20px;
+     max-height: 126px;
+    margin-right: 8px;
+    margin-top: -20px;
+    margin-left: 40px;
 }
 
 .header .logo h1 {
@@ -482,11 +486,12 @@ h6 {
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
     color: var(--nav-color);
-    font-size: 28px;
+    font-size: 48px;
     line-height: 0;
     margin-right: 10px;
     cursor: pointer;
     transition: color 0.3s;
+margin-right: 40px;
   }
 
   .navmenu {
@@ -502,7 +507,7 @@ h6 {
     padding: 10px 0;
     margin: 0;
     border-radius: 6px;
-    background-color: var(--nav-mobile-background-color);
+    
     border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
     box-shadow: none;
     overflow-y: auto;
@@ -1008,11 +1013,46 @@ section,
   font-size: 20px;
   font-weight: 700;
   margin: 10px 0 20px 0;
+  color: black;
 }
 
 .hero .content .icon-box p {
   font-size: 15px;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: #f8fafc;
+  background-color: #00000059;
+  border-radius: 10px;
+}
+.icon-box-bg {
+  background-image: url('../img/1.jpeg'); /* Update this to match your file structure */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(172, 46, 46);
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional */
+  min-height: 200px; /* Ensure the box has a height */
+}
+
+
+.icon-box-bg h4,
+.icon-box-bg p,
+.icon-box-bg i {
+  z-index: 2;           /* Ensures the text stays above the background */
+  position: relative;   /* Works with z-index */
+}
+
+.icon-box-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adds a dark overlay for better text readability */
+  z-index: 1;           /* Places the overlay behind the text */
+  border-radius: 8px;   /* Matches the box radius */
 }
 
 /*--------------------------------------------------------------
