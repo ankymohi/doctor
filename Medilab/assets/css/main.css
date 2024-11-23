@@ -224,6 +224,100 @@ h6 {
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
+
+.appointment-form-box {
+  background: #1977cc;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.appointment-form-box h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff0000, #ff6b6b, #000000);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-slide 3s infinite;
+}
+
+@keyframes gradient-slide {
+  0% {
+    background-position: 0%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
+
+
+.appointment-form-box p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.appointment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: 2px solid #2575fc;
+  background: #f5f5f5;
+}
+
+textarea {
+  resize: none;
+}
+
+.btn-appointment {
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-appointment:hover {
+  background: #ff4757;
+}
+
+
+
+
 .header {
   color: var(--default-color);
   transition: all 0.5s;
@@ -808,6 +902,78 @@ margin-right: 40px;
 /*--------------------------------------------------------------
 # Global Page Titles & Breadcrumbs
 --------------------------------------------------------------*/
+
+
+#hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.offer-badge {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  height: 80px;
+  width: 90px;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b); /* Vibrant gradient colors */
+  color: white;
+  padding: 20px 30px;
+  margin-top: -100px;
+  margin-right: -90px;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  animation: bounce 2s infinite;
+  transform: translateY(0);
+}
+
+.offer-badge span {
+  display: block;
+  font-size: 10px;
+  font-weight: 130;
+  letter-spacing: 1px;
+}
+
+.offer-badge strong {
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .offer-badge {
+    padding: 15px 20px;
+    top: 9%;
+    right: 25%;
+  }
+
+  .offer-badge span {
+    font-size: 14px;
+  }
+
+  .offer-badge strong {
+    font-size: 12px;
+  }
+}
+
+
+
+
+
+
+
+
 .page-title {
   color: var(--default-color);
   background-color: var(--background-color);
@@ -919,6 +1085,15 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
 .hero {
   width: 100%;
   min-height: calc(100vh - 112px);
@@ -928,6 +1103,7 @@ section,
   justify-content: center;
   position: relative;
   overflow: hidden;
+
 }
 
 .hero img {
@@ -1099,6 +1275,60 @@ section,
   left: calc(50% - 47px);
   top: calc(50% - 47px);
 }
+
+
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+ margin-left: -10px;
+  transition: transform 1s ease;
+  position: relative;
+}
+
+.icon-box {
+  flex: 0 0 30%; /* Each box takes up 30% of the container width */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  text-align: center;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #000; /* Background color, or you can use images */
+  color: rgba(255, 255, 255, 0.473)255, 255, 255, 0.404);
+  opacity: 0.7; /* Makes the non-center boxes slightly faded */
+  transform: scale(0.8); /* Makes the non-center boxes smaller */
+}
+
+.icon-box.active {
+  opacity: 1; /* Makes the center box fully visible */
+  transform: scale(1); /* Makes the center box bigger */
+}
+
+.icon-box img {
+  width: 100%;
+  height: auto;
+}
+
+/* Create a transition effect to shift between the boxes */
+.carousel.active {
+  transform: translateX(-100%); /* Move the carousel left */
+}
+
+
+/* Mobile Responsiveness */
+
+
+
+
+
+
+
+
 
 /*--------------------------------------------------------------
 # Stats Section
