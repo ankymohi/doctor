@@ -1314,7 +1314,7 @@ section,
   padding: 20px;
   background-color: #000; /* Background color, or you can use images */
   color: rgba(255, 255, 255, 0.473)255, 255, 255, 0.404);
-  opacity: 0.7; /* Makes the non-center boxes slightly faded */
+ 
   transform: scale(0.8); /* Makes the non-center boxes smaller */
 }
 
