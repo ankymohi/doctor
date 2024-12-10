@@ -195,9 +195,6 @@ h6 {
   padding: 15px;
   margin-bottom: 24px;
 }
-.animate-on-scroll {
-  animation: none; /* No animation */
-}
 
 .php-email-form .loading:before {
   content: "";
@@ -822,6 +819,10 @@ margin-right: 40px;
   font-size: 13px;
 }
 
+
+
+
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -860,35 +861,6 @@ margin-right: 40px;
 /*--------------------------------------------------------------
 # Scroll Top Button
 --------------------------------------------------------------*/
-.scroll-top {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: 15px;
-  z-index: 99999;
-  background-color: var(--accent-color);
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
-  transition: all 0.4s;
-}
-
-.scroll-top i {
-  font-size: 24px;
-  color: var(--contrast-color);
-  line-height: 0;
-}
-
-.scroll-top:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
-  color: var(--contrast-color);
-}
-
-.scroll-top.active {
-  visibility: visible;
-  opacity: 1;
-}
 
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
@@ -913,8 +885,8 @@ margin-right: 40px;
   position: absolute;
   top: 10%;
   right: 10%;
-  height: 80px;
-  width: 90px;
+  height: 100px;
+  width: 100px;
   background: linear-gradient(45deg, #ff416c, #ff4b2b); /* Vibrant gradient colors */
   color: white;
   padding: 20px 30px;
