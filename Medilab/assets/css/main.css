@@ -881,6 +881,7 @@ margin-right: 40px;
 }
 @media screen and (max-width: 768px) {
   .stats, .appointment {
+    background: url('../img/space.jpeg'); 
     background-position: center center; /* Keep the image centered */
     background-attachment: scroll; /* Prevent parallax effect on mobile for smooth scrolling */
     height: auto; /* Allow the height to adjust based on content */
