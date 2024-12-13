@@ -106,7 +106,7 @@
             <strong>GRÁTIS!</strong>
           </div>
           <p>Comece sua jornada para uma melhor saúde mental. Agende sua consulta hoje.</p>
-          <form action="#" method="POST" class="appointment-form">
+          <form action="https://formspree.io/f/xnnqyygd" method="POST" class="appointment-form">
             <div class="form-group">
               <label for="name">Nome Completo</label>
               <input type="text" id="name" name="name" placeholder="Digite seu nome completo" required>
@@ -295,7 +295,6 @@
 
 </section>
 <!-- /Seção de Estatísticas -->
-
 <!-- Seção de Serviços -->
 <section id="services" class="services section">
 
@@ -309,73 +308,79 @@
 
     <div class="row gy-4">
 
+      <!-- Terapia Individual -->
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="service-item position-relative">
+        <div class="service-item position-relative service-bg-1">
           <div class="icon">
             <i class="fas fa-brain"></i>
           </div>
           <a href="#" class="stretched-link">
-            <h3>Terapia Individual</h3>
+            <h3 class="head">Terapia Individual</h3>
           </a>
           <p>Sessões personalizadas para explorar pensamentos, emoções e comportamentos em um ambiente seguro.</p>
         </div>
       </div><!-- Fim Item de Serviço -->
 
+      <!-- Conselhamento em Grupo -->
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="service-item position-relative">
+        <div class="service-item position-relative service-bg-2">
           <div class="icon">
             <i class="fas fa-users"></i>
           </div>
           <a href="#" class="stretched-link">
-            <h3>Conselhamento em Grupo</h3>
+            <h3 class="head">Conselhamento em Grupo</h3>
           </a>
           <p>Participe de sessões em grupo para compartilhar experiências e encontrar força na cura comunitária.</p>
         </div>
       </div><!-- Fim Item de Serviço -->
 
+      <!-- Terapia de Casal -->
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-        <div class="service-item position-relative">
+        <div class="service-item position-relative service-bg-3">
           <div class="icon">
             <i class="fas fa-heart"></i>
           </div>
           <a href="#" class="stretched-link">
-            <h3>Terapia de Casal</h3>
+            <h3 class="head">Terapia de Casal</h3>
           </a>
           <p>Fortaleça relacionamentos e resolva conflitos com técnicas eficazes de comunicação e orientação.</p>
         </div>
       </div><!-- Fim Item de Serviço -->
 
+      <!-- Terapia Infantil e Adolescente -->
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-        <div class="service-item position-relative">
+        <div class="service-item position-relative service-bg-4">
           <div class="icon">
             <i class="fas fa-child"></i>
           </div>
           <a href="#" class="stretched-link">
-            <h3>Terapia Infantil e Adolescente</h3>
+            <h3 class="head">Terapia Infantil e Adolescente</h3>
           </a>
           <p>Ajudando jovens a lidar com desafios emocionais, sociais e comportamentais em um ambiente acolhedor.</p>
         </div>
       </div><!-- Fim Item de Serviço -->
 
+      <!-- Gestão de Estresse e Ansiedade -->
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-        <div class="service-item position-relative">
+        <div class="service-item position-relative service-bg-5">
           <div class="icon">
             <i class="fas fa-leaf"></i>
           </div>
           <a href="#" class="stretched-link">
-            <h3>Gestão de Estresse e Ansiedade</h3>
+            <h3 class="head">Gestão de Estresse e Ansiedade</h3>
           </a>
           <p>Aprenda estratégias práticas para gerenciar o estresse e reduzir a ansiedade, promovendo equilíbrio.</p>
         </div>
       </div><!-- Fim Item de Serviço -->
 
+      <!-- Workshops e Seminários -->
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-        <div class="service-item position-relative">
+        <div class="service-item position-relative service-bg-6">
           <div class="icon">
             <i class="fas fa-mind-share"></i>
           </div>
           <a href="#" class="stretched-link">
-            <h3>Workshops e Seminários</h3>
+            <h3 class="head">Workshops e Seminários</h3>
           </a>
           <p>Participe de workshops e seminários de saúde mental projetados para educar e capacitar indivíduos.</p>
         </div>
@@ -393,13 +398,13 @@
 
   <!-- Título da Seção -->
   <div class="container section-title" data-aos="fade-up">
-    <h2>Agende uma Consulta</h2>
-    <p>Marque uma sessão com nossos psicólogos experientes para começar sua jornada de bem-estar mental.</p>
+    <h2 class="head">Agende uma Consulta</h2>
+   
   </div><!-- Fim Título da Seção -->
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-    <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
+    <form action="https://formspree.io/f/xnnqyygd" method="post" role="form" >
       <div class="row">
         <div class="col-md-4 form-group">
           <input type="text" name="name" class="form-control" id="name" placeholder="Seu Nome" required="">
@@ -440,10 +445,8 @@
         <textarea class="form-control" name="message" rows="5" placeholder="Mensagem (Opcional)"></textarea>
       </div>
       <div class="mt-3">
-        <div class="loading">Carregando</div>
-        <div class="error-message"></div>
-        <div class="sent-message">Sua solicitação de consulta foi enviada com sucesso. Obrigado!</div>
-        <div class="text-center"><button type="submit">Agendar Consulta</button></div>
+       
+        <div class="text-center"><button class="btn-appointment" type="submit">Agendar Consulta</button></div>
       </div>
     </form>
 
@@ -494,7 +497,7 @@
                 <p>Nossos psicólogos especializados trabalham com você para identificar desafios, estabelecer metas significativas e desenvolver estratégias para promover o crescimento e a cura em um ambiente de apoio.</p>
               </div>
               <div class="col-lg-4 text-center order-1 order-lg-2">
-                <img src="assets/img/services-individual.jpg" alt="Terapia Individual" class="img-fluid">
+                <img src="assets/img/about1.jpeg" alt="Terapia Individual" class="img-fluid">
               </div>
             </div>
           </div>
@@ -506,7 +509,7 @@
                 <p>Seja enfrentando conflitos, comunicação ou questões de confiança, nossos conselheiros ajudam você e seu parceiro a construir conexões mais saudáveis e uma compreensão mútua.</p>
               </div>
               <div class="col-lg-4 text-center order-1 order-lg-2">
-                <img src="assets/img/services-couples.jpg" alt="Aconselhamento para Casais" class="img-fluid">
+                <img src="assets/img/couple.jpg" alt="Aconselhamento para Casais" class="img-fluid">
               </div>
             </div>
           </div>
@@ -518,7 +521,7 @@
                 <p>Nossas sessões se concentram em identificar os fatores estressores e equipá-lo com estratégias de mindfulness, relaxamento e resolução de problemas para melhorar sua resistência mental.</p>
               </div>
               <div class="col-lg-4 text-center order-1 order-lg-2">
-                <img src="assets/img/services-stress.jpg" alt="Gestão de Estresse" class="img-fluid">
+                <img src="assets/img/stress.jpg" alt="Gestão de Estresse" class="img-fluid">
               </div>
             </div>
           </div>
@@ -530,7 +533,7 @@
                 <p>Oferecemos um ambiente seguro e acolhedor para lidar com problemas comportamentais, ansiedade, bullying e muito mais, garantindo um futuro melhor para crianças e adolescentes.</p>
               </div>
               <div class="col-lg-4 text-center order-1 order-lg-2">
-                <img src="assets/img/services-children.jpg" alt="Terapia para Crianças" class="img-fluid">
+                <img src="assets/img/kids.jpg" alt="Terapia para Crianças" class="img-fluid">
               </div>
             </div>
           </div>
@@ -542,7 +545,7 @@
                 <p>As sessões em grupo são projetadas para promover a comunidade, empatia e cura coletiva, lidando com questões como ansiedade social, luto ou dependência.</p>
               </div>
               <div class="col-lg-4 text-center order-1 order-lg-2">
-                <img src="assets/img/services-group.jpg" alt="Terapia de Grupo" class="img-fluid">
+                <img src="assets/img/group.jpg" alt="Terapia de Grupo" class="img-fluid">
               </div>
             </div>
           </div>
@@ -575,12 +578,7 @@
             <h4>Dr. Walter White</h4>
             <span>Psicólogo Chefe</span>
             <p>Especialista em terapia cognitivo-comportamental e abordagens baseadas em mindfulness para cuidados de saúde mental.</p>
-            <div class="social">
-              <a href=""><i class="bi bi-twitter"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
-            </div>
+           
           </div>
         </div>
       </div><!-- End Team Member -->
@@ -592,12 +590,7 @@
             <h4>Dr. Sarah Johnson</h4>
             <span>Psicóloga Infantil</span>
             <p>Dedica-se a apoiar crianças e adolescentes em desafios emocionais, sociais e de desenvolvimento.</p>
-            <div class="social">
-              <a href=""><i class="bi bi-twitter"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
-            </div>
+           
           </div>
         </div>
       </div><!-- End Team Member -->
@@ -609,12 +602,7 @@
             <h4>Dr. William Anderson</h4>
             <span>Conselheiro de Relacionamentos</span>
             <p>Ajuda indivíduos e casais a fortalecer relacionamentos, resolver conflitos e melhorar a comunicação.</p>
-            <div class="social">
-              <a href=""><i class="bi bi-twitter"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
-            </div>
+           
           </div>
         </div>
       </div><!-- End Team Member -->
@@ -626,12 +614,7 @@
             <h4>Dr. Amanda Jepson</h4>
             <span>Especialista em Trauma</span>
             <p>Especialista em recuperação de trauma e terapia para transtorno de estresse pós-traumático (TEPT).</p>
-            <div class="social">
-              <a href=""><i class="bi bi-twitter"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
-            </div>
+           
           </div>
         </div>
       </div><!-- End Team Member -->
@@ -878,15 +861,15 @@
       <div class="col-lg-3 col-md-4">
         <div class="gallery-item">
           <a href="assets/img/gallery/gallery-1.jpg" class="glightbox" data-gallery="images-gallery">
-            <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+            <img src="assets/img/gallery1.jpg" alt="" class="img-fluid">
           </a>
         </div>
       </div><!-- Fim Item Galeria -->
 
       <div class="col-lg-3 col-md-4">
         <div class="gallery-item">
-          <a href="assets/img/gallery/gallery-2.jpg" class="glightbox" data-gallery="images-gallery">
-            <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+          <a href="assets/img/gallery2.jpg" class="glightbox" data-gallery="images-gallery">
+            <img src="assets/img/gallery2.jpg" alt="" class="img-fluid">
           </a>
         </div>
       </div><!-- Fim Item Galeria -->
@@ -894,7 +877,7 @@
       <div class="col-lg-3 col-md-4">
         <div class="gallery-item">
           <a href="assets/img/gallery/gallery-3.jpg" class="glightbox" data-gallery="images-gallery">
-            <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+            <img src="assets/img/gallery3.jpg" alt="" class="img-fluid">
           </a>
         </div>
       </div><!-- Fim Item Galeria -->
@@ -902,7 +885,7 @@
       <div class="col-lg-3 col-md-4">
         <div class="gallery-item">
           <a href="assets/img/gallery/gallery-4.jpg" class="glightbox" data-gallery="images-gallery">
-            <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+            <img src="assets/img/gallery4.jpg" alt="" class="img-fluid">
           </a>
         </div>
       </div><!-- Fim Item Galeria -->
@@ -910,7 +893,7 @@
       <div class="col-lg-3 col-md-4">
         <div class="gallery-item">
           <a href="assets/img/gallery/gallery-5.jpg" class="glightbox" data-gallery="images-gallery">
-            <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
+            <img src="assets/img/gallery5.jpg" alt="" class="img-fluid">
           </a>
         </div>
       </div><!-- Fim Item Galeria -->
@@ -918,7 +901,7 @@
       <div class="col-lg-3 col-md-4">
         <div class="gallery-item">
           <a href="assets/img/gallery/gallery-6.jpg" class="glightbox" data-gallery="images-gallery">
-            <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+            <img src="assets/img/gallery2.jpg" alt="" class="img-fluid">
           </a>
         </div>
       </div><!-- Fim Item Galeria -->
@@ -926,7 +909,7 @@
       <div class="col-lg-3 col-md-4">
         <div class="gallery-item">
           <a href="assets/img/gallery/gallery-7.jpg" class="glightbox" data-gallery="images-gallery">
-            <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+            <img src="assets/img/gallery1.jpg" alt="" class="img-fluid">
           </a>
         </div>
       </div><!-- Fim Item Galeria -->
@@ -934,7 +917,7 @@
       <div class="col-lg-3 col-md-4">
         <div class="gallery-item">
           <a href="assets/img/gallery/gallery-8.jpg" class="glightbox" data-gallery="images-gallery">
-            <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+            <img src="assets/img/gallery5.jpg" alt="" class="img-fluid">
           </a>
         </div>
       </div><!-- Fim Item Galeria -->
@@ -992,7 +975,7 @@
       </div>
 
       <div class="col-lg-8">
-        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+        <form action="https://formspree.io/f/xnnqyygd" method="post"  data-aos="fade-up"
           data-aos-delay="200">
           <div class="row gy-4">
 
@@ -1013,11 +996,9 @@
             </div>
 
             <div class="col-md-12 text-center">
-              <div class="loading">Carregando</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Sua mensagem foi enviada. Obrigado!</div>
+             
 
-              <button type="submit">Enviar Mensagem</button>
+              <button class="btn-appointment"  type="submit">Enviar Mensagem</button>
             </div>
 
           </div>
@@ -1038,7 +1019,7 @@
     <div class="row gy-4">
       <div class="col-lg-4 col-md-6 footer-about">
         <a href="index.html" class="logo d-flex align-items-center">
-          <span class="sitename">MindCare</span>
+          <span class="sitename">Clinica Brotar</span>
         </a>
         <div class="footer-contact pt-3">
           <p>123 Wellness Street</p>

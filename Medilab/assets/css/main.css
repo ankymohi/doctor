@@ -72,6 +72,16 @@ a {
   transition: 0.3s;
 }
 
+.head {
+  color: #f1f7fc;
+background-color: rgba(0, 0, 0, 0.35);
+border-radius: 10px;
+}
+.para{
+  color: #f1f7fc;
+background-color: rgba(0, 0, 0, 0.35);
+border-radius: 10px;
+}
 a:hover {
   color: color-mix(in srgb, var(--accent-color), transparent 25%);
   text-decoration: none;
@@ -79,7 +89,7 @@ a:hover {
 
 h1,
 h2,
-h3,
+h3 ,
 h4,
 h5,
 h6 {
@@ -822,6 +832,85 @@ margin-right: 40px;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* General Service Item Styles */
+.service-item {
+  padding: 20px;
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.service-item .icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.service-item h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+/* Background Image for Stats Section */
+.stats {
+  background: url('../img/1.jpeg'); 
+  background-size: cover;
+}
+/* Background Image for Appointment Section */
+.appointment {
+  background: url('../img/1.jpeg'); 
+  background-size: cover;
+}
+
+
+/* Background Styles for Each Service */
+.service-bg-1 {
+  background: url('../img/doctor4.jpg'); 
+  background-size: cover;
+}
+
+.service-bg-2 {
+  background: url('../img/group.jpg'); 
+  background-size: cover;
+}
+
+.service-bg-3 {
+  background: url('../img/couple.jpg'); 
+  background-size: cover;
+}
+
+.service-bg-4 {
+  background: url('../img/kids.jpg'); 
+  background-size: cover;
+}
+
+.service-bg-5 {
+  background: url('../img/stress.jpg'); 
+  background-size: cover;
+}
+
+.service-bg-6 {
+  background: url('../img/gallery5.jpg'); 
+  background-size: cover;
+}
 
 /*--------------------------------------------------------------
 # Preloader
